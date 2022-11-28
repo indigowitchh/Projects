@@ -1,6 +1,7 @@
 import random
 import os
-inventory =  ['phone','empty','empty', 'empty', 'empty']
+
+inventory = ['phone','empty','empty', 'empty', 'empty']
 
 #GameOver-------------------------------------------------------------------------------------------
 def falldown():
@@ -91,7 +92,7 @@ while doExit == False:
             room = 1
         elif choice == "drawer" or choice == "d":
             print("The item you grab shines in your hand. It feels lucky. You put it in your pocket.")
-            inventory[1]="lucky charm"
+            inventory[2] = "lucky charm"
         else:
             print("Sorry not an option!")
             
@@ -111,10 +112,13 @@ while doExit == False:
             print("Sorry, not an option!")
             
     if room == 5:
-        print("Although your house is silent and no one seems to be around, the sound of your baby sibling crying rings through your ears. Yet, they are no where to be found. The longer you spend in the room, the louder the crying gets. Save your eardrums and go (s)outh to enter the hallway")
+        print("Although your house is silent and no one seems to be around, the sound of your baby sibling crying rings through your ears. Yet, they are no where to be found, the only thing left of them is their pacifer. The longer you spend in the room, the louder the crying gets. Save your eardrums and go (s)outh to enter the hallway!")
         choice = input()
         if choice == 's' or choice == 'S' or choice == 'south':
             room = 4
+        elif choice == 'p' or choice == 'P' or choice == 'pacifier':
+            print("You grab the pacifier in the crib. You hold it tight along your journey.")
+            inventory[3]= "pacifier"
         else:
             print("Sorry, not an option!")
             
@@ -162,10 +166,13 @@ while doExit == False:
             print("Sorry not an option")
             
     if room == 9:
-        print("Holy cow! The kitchen is covered in blood! It looks like a crazy crime scene. Your stomach drops and you feel like throwing up. You need to leave. You weren't supposed to see this. Go (n)orth into the living room.")
+        print("Holy cow! The kitchen is covered in blood! It looks like a crazy crime scene with a singular sword in the middle of the room. Your stomach drops and you feel like throwing up. You need to leave. You weren't supposed to see this. Go (n)orth into the living room.")
         choice = input()
         if choice == 'n' or choice == 'N' or choice == 'north':
             room = 8
+        elif choice == 'sword' or choice == 'Sword':
+            print("You pick up the sword and take it with you for protection. You feel tougher already.")
+            inventory[4] = "sword"
         else:
             print("Sorry, not an option!")
             
@@ -185,7 +192,7 @@ while doExit == False:
 
 if dead == True:
     os.system('color 4')
-    print("Game over. You lose.")
+    print("Game over. You lose. You died with", inventory)
 else:
     os.system('color 7')
-    print("You won! Congrats!")
+    print("You won! Congrats! You survived with", inventory)
