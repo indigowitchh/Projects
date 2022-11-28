@@ -14,7 +14,7 @@ def falldown():
             print("The light gets brighter. You run towards it and it blinds you. You close your eyes and when you open them again you wake up in your room. You can hear your family, the birds chirping and your dog barking! It was just a dream.")
             return 2
         else:
-            print("You twist your ankle. Now you have a limp.")
+            print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
     else:
         if num < 50:
