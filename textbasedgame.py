@@ -1,6 +1,6 @@
 import random
-
-inventory = ["Phone"," "," "]
+import os
+inventory =  ['phone','empty','empty', 'empty', 'empty']
 
 #GameOver-------------------------------------------------------------------------------------------
 def falldown():
@@ -184,6 +184,8 @@ while doExit == False:
             print("Sorry, not an option!")
 
 if dead == True:
+    os.system('color 4')
     print("Game over. You lose.")
 else:
+    os.system('color 7')
     print("You won! Congrats!")
