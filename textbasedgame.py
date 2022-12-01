@@ -1,3 +1,5 @@
+#THE BACKROOMS by Rey 12/2022
+
 import random #module for random
 import os #module for colors
 
