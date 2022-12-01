@@ -19,13 +19,13 @@ def falldown():
             print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
     else:
-        if num < 50: #50 percent chance
+        if num < 50: #50 percent chance 
             print("You trip over your own foot. As you fall onto the floor, the ground beneath you dissapears. You're in the sky now, watching yourself get closer and closer to earths surface. You plummet to your death.")
             return 1
         elif num < 70: #20 percent chance
             print("The light gets brighter. You run towards it and it blinds you. You close your eyes and when you open them again you wake up in your room. You can hear your family, the birds chirping and your dog barking! It was just a dream.")
             return 2
-        else: #30 percent chance
+        else: #30 percent chance 
             print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
 
@@ -39,7 +39,7 @@ def monster(biome):
             print("A tall figure peers from around the corner. He has no face.")
         elif num < 90: #40 percent chance
             print("A clown doll sits in the corner of the room. Watching your every move.")
-        else:
+        else: #10 percent chance
             print("A tall black figure walks towards you with open arms, but for some reason you feel like you can trust him.")
      
     elif biome == "room?":
@@ -49,7 +49,7 @@ def monster(biome):
             print("A tall figure peers from around the corner. He has no face.")
         elif num < 85: #10 percent chance 
             print("A clown doll sits in the corner of the room. Watching your every move.")
-        else:
+        else: #15 percent chance
             print("A tall black figure walks towards you with open arms, but for some reason you feel like you can trust him.")
      
     elif biome == "different":
@@ -59,7 +59,7 @@ def monster(biome):
             print("A tall figure peers from around the corner. He has no face.")
         elif num < 90: #40 percent chance
             print("A clown doll sits in the corner of the room. Watching your every move.")
-        else:
+        else: #10 percent chance
             print("A tall black figure walks towards you with open arms, but for some reason you feel like you can trust him.")
 
 #Variables------------------------------------------------------
