@@ -19,13 +19,13 @@ def falldown():
             print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
     else:
-        if num < 50:
+        if num < 50: #50 percent chance
             print("You trip over your own foot. As you fall onto the floor, the ground beneath you dissapears. You're in the sky now, watching yourself get closer and closer to earths surface. You plummet to your death.")
             return 1
-        elif num < 20:
+        elif num < 70: #20 percent chance
             print("The light gets brighter. You run towards it and it blinds you. You close your eyes and when you open them again you wake up in your room. You can hear your family, the birds chirping and your dog barking! It was just a dream.")
             return 2
-        else:
+        else: #30 percent chance
             print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
 
