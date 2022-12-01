@@ -1,6 +1,6 @@
 #THE BACKROOMS by Rey 12/2022
 
-import random #module for random
+import random #module for random generator
 import os #module for colors
 
 inventory = ['phone','empty','empty', 'empty', 'empty'] #player inventory
