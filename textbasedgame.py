@@ -26,6 +26,7 @@ def falldown():
         else:
             print("You twist your ankle. Now you have a limp. You must continue on with your journey.")
             return 3
+
 #Monster Function-------------------------------------------------------------------------------------------
 def monster(biome):
     num = random.randrange(0,100)
@@ -58,10 +59,12 @@ def monster(biome):
             print("A clown doll sits in the corner of the room. Watching your every move.")
         else:
             print("A tall black figure walks towards you with open arms, but for some reason you feel like you can trust him.")
-#Variables--------------
+
+#Variables------------------------------------------------------
 room = 1
 doExit = False
 dead = False
+
 #Rooms------------------------------------------------------------------------------------------------------
 print("You wake up in your room. But, something feels off. Everything is the same as when you layed down and nothing is out of place. Except, it's quiet. No sound of family talking or the dogs walking around. Crap, you can't even hear the birds chirping. Curious, you decide to explore with your phone in your pocket.")
 
@@ -191,6 +194,7 @@ while doExit == False:
         else:
             print("Sorry, not an option!")
 
+#Win/Lose Statements-------------------------------
 if dead == True: #game over result
     os.system('color 4') #color change
     print("Game over. You lose. You died with", inventory) #final inventory
