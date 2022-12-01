@@ -99,6 +99,7 @@ while doExit == False:
         elif choice == "drawer" or choice == "d":
             print("The item you grab shines in your hand. It feels lucky. You put it in your pocket.")
             inventory[2] = "lucky charm" #adding to inventory
+            print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
         else:
             print("Sorry not an option!")
             
@@ -125,6 +126,7 @@ while doExit == False:
         elif choice == 'p' or choice == 'P' or choice == 'pacifier':
             print("You grab the pacifier in the crib. You hold it tight along your journey.")
             inventory[3]= "pacifier" #adding to inventory
+            print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
         else:
             print("Sorry, not an option!")
             
@@ -146,6 +148,7 @@ while doExit == False:
         if choice == 'r':
             print("You found a key!")
             inventory[1] = "key" #adding to inventory
+            print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
         elif choice == 'n' or choice == 'N' or choice == 'north':
             room = 6
         else:
@@ -179,6 +182,7 @@ while doExit == False:
         elif choice == 'sword' or choice == 'Sword':
             print("You pick up the sword and take it with you for protection. You feel tougher already.")
             inventory[4] = "sword" #adding to inventory
+            print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
         else:
             print("Sorry, not an option!")
             
