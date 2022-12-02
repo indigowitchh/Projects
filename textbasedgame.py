@@ -202,7 +202,7 @@ while doExit == False:
 
 #Win/Lose Statements-------------------------------
 if dead == True: #game over result
-    os.system('color 4') #color change
+    os.system('color 2') #color change
     print("Game over. You lose. You died with", inventory) #final inventory
 elif dead != True: #winning result
     os.system('color 7') #color change
