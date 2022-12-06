@@ -208,12 +208,12 @@ if dead == True: #game over result
     os.system('color 4') #color change
     print("You lose. Better luck next time. You died with", inventory) #final inventory
     print("___/|")
-    print("\o.O | Meow! Game over!")
+    print("\o.O| Meow! Game over!")
     print("(___)")
 
 elif dead != True: #winning result
     os.system('color 2') #color change
     print("You won! Congrats! You survived with", inventory)#final inventory
     print("___/|")
-    print("\o.O | Meow! Good job!")
+    print("\o.O| Meow! Good job!")
     print("(___)")
