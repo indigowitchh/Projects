@@ -181,6 +181,9 @@ while doExit == False:
             room = 8
         elif choice == 'sword' or choice == 'Sword':
             print("You pick up the sword and take it with you for protection. You feel tougher already.")
+            print("      /|_______________")
+            print("o|===| >_______________>")
+            print("      \|")
             inventory[4] = "sword" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
         else:
@@ -203,7 +206,14 @@ while doExit == False:
 #Win/Lose Statements-------------------------------
 if dead == True: #game over result
     os.system('color 4') #color change
-    print("Game over. You lose. You died with", inventory) #final inventory
+    print("You lose. Better luck next time. You died with", inventory) #final inventory
+    print("___/|")
+    print("\o.O | Meow! Game over!")
+    print("(___)")
+
 elif dead != True: #winning result
     os.system('color 2') #color change
-    print("You won! Congrats! You survived with", inventory) #final inventory
+    print("You won! Congrats! You survived with", inventory)#final inventory
+    print("___/|")
+    print("\o.O | Meow! Good job!")
+    print("(___)")
