@@ -73,6 +73,7 @@ print("You wake up in your room. But, something feels off. Everything is the sam
 while doExit == False:
     if room == 1: #room/starting point
         print("You are in your bedroom, you can go (e)ast to enter the hallway, (n)orth to enter your closet, or (s)outh to go into the bathroom.")
+        print("Your inventory is", inventory)
         choice = input()
         if choice == 'e' or choice == 'E'or choice == 'east':
             room = 4
