@@ -124,7 +124,7 @@ while doExit == False:
         choice = input()
         if choice == 's' or choice == 'S' or choice == 'south':
             room = 4
-        elif choice == 'p' or choice == 'P' or choice == 'pacifier':
+        elif choice == 'p' or choice == 'P' or choice == 'pacifier' or choice == 'Pacifier':
             print("You grab the pacifier in the crib. You hold it tight along your journey.")
             inventory[3]= "pacifier" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
@@ -180,7 +180,7 @@ while doExit == False:
         choice = input()
         if choice == 'n' or choice == 'N' or choice == 'north':
             room = 8
-        elif choice == 'sword' or choice == 'Sword':
+        elif choice == 'sword' or choice == 'Sword' or choice == 's' or choice == 'S':
             print("You pick up the sword and take it with you for protection. You feel tougher already.")
             inventory[4] = "sword" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
