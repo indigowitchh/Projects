@@ -1,5 +1,6 @@
 #THE BACKROOMS by Rey 12/2022
 
+import winsound #used for beeps
 import random #module for random generator
 import os #module for colors
 
@@ -98,6 +99,7 @@ while doExit == False:
         if choice == 'n' or choice == 'N' or choice == 'north':
             room = 1
         elif choice == "drawer" or choice == "d":
+            winsound.Beep(500,500)
             print("The item you grab shines in your hand. It feels lucky. You put it in your pocket.")
             inventory[2] = "lucky charm" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
@@ -125,6 +127,7 @@ while doExit == False:
         if choice == 's' or choice == 'S' or choice == 'south':
             room = 4
         elif choice == 'p' or choice == 'P' or choice == 'pacifier' or choice == 'Pacifier':
+            winsound.Beep(500,500)
             print("You grab the pacifier in the crib. You hold it tight along your journey.")
             inventory[3]= "pacifier" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
@@ -147,6 +150,7 @@ while doExit == False:
         monster("different")
         choice = input()
         if choice == 'r':
+            winsound.Beep(500,500)
             print("You found a key!")
             inventory[1] = "key" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
@@ -181,6 +185,7 @@ while doExit == False:
         if choice == 'n' or choice == 'N' or choice == 'north':
             room = 8
         elif choice == 'sword' or choice == 'Sword' or choice == 's' or choice == 'S':
+            winsound.Beep(500,500)
             print("You pick up the sword and take it with you for protection. You feel tougher already.")
             inventory[4] = "sword" #adding to inventory
             print("Your inventory updated! Your inventory is now", inventory) #tell player their inventory
@@ -204,6 +209,7 @@ while doExit == False:
 #Win/Lose Statements-------------------------------
 if dead == True: #game over result
     os.system('color 4') #color change
+    winsound.Beep(200,600)
     print("You lose. Better luck next time. You died with", inventory) #final inventory
     print("___/|")
     print("\o.O| Meow! Game over!")
@@ -211,6 +217,7 @@ if dead == True: #game over result
 
 elif dead != True: #winning result
     os.system('color 2') #color change
+    winsound.Beep(900,900)
     print("You won! Congrats! You survived with", inventory)#final inventory
     print("___/|")
     print("\o.O| Meow! Good job!")
