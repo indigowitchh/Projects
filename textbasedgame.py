@@ -149,7 +149,7 @@ while doExit == False:
         print("You are in a different room. One you do not recognize. A rug is convientaly placed in the middle of the room. That feeling of being watched creeps up on you. Yet, there's no door to lead you away. You're cornered! The only way back is to your supposed bedroom. You can go (n)orth")
         monster("different")
         choice = input()
-        if choice == 'r':
+        if choice == 'r' or choice == 'rug' or choice == 'Rug':
             winsound.Beep(500,500)
             print("You found a key!")
             inventory[1] = "key" #adding to inventory
